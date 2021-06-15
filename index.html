@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+    	@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+	margin: 0;
+  	padding: 0;
+  	box-sizing: border-box;
+  	font-family: "Kumbh Sans", sans-serif;
+  	font-weight: 400;
+}
+.container {
+	position: relative;
+  	height: 100vh;
+  	background: hsl(185, 75%, 39%);
+  	color: hsl(229, 23%, 23%);
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	overflow: hidden;
+}
+#bg-pattern-top {
+  	position: absolute;
+  	background: url("bg-pattern-top.svg");
+  	background-size: contain;
+  	background-repeat: no-repeat;
+  	height: 970px;
+  	width: 970px;
+  	top: -520px;
+  	left: -280px;
+}
+#bg-pattern-bottom {
+  	position: absolute;
+  	background: url("bg-pattern-bottom.svg");
+  	background-size: contain;
+ 	background-repeat: no-repeat;
+  	height: 970px;
+  	width: 970px;
+  	bottom: -620px;
+  	right: -250px;
+}
+.form {
+  	background: white;
+  	font-size: 18px;
+  	height: 376px;
+  	width: 350px;
+  	border-radius: 20px;
+  	z-index: 2;
+  	position: relative;
+}
+.form .bg-pattern-card {
+  	height: 140px;
+  	background: url("bg-pattern-card.svg");
+  	border-radius: 20px 20px 0 0;
+  	z-index: 3;
+}
+.nav .avatar {
+	padding: 5px;
+	border-radius: 50%;
+ 	display: flex;
+ 	left: 50%;
+ 	transform: translatex(-50%);
+ 	top: 90px;
+ 	background: white;
+ 	position: absolute;
+ 	align-items: center;
+ 	justify-content: center;
+}
+.info {
+ 	margin-top: 74px;
+  	display: flex;
+  	align-items: center;
+  	flex-direction: column;
+}
+.nav .avatar img {
+  	border-radius: 50%;
+}
+.nav {
+  	width: 100%;
+  	text-align: center;
+  	border-bottom: 1px solid hsl(0, 0%, 59%);
+  	padding-bottom: 25px;
+}
+.details {
+  	padding-top: 20px;
+ 	text-align: center;
+  	width: 100%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: space-evenly;
+}
+.nav .name {
+	font-weight: 700;
+}
+.nav .name span {
+	font-size: 20px;
+ 	margin-bottom: 13px;
+  
+}
+.nav .loc {
+  	color: hsl(227, 10%, 46%);
+  	font-size: 18px;
+}
+.details p {
+  	color: hsl(227, 10%, 46%);
+}
+.details .num {
+  	font-size: 17px;
+  	font-weight: 550;
+  	margin-bottom: 5px;
+  	color: hsl(229, 23%, 23%);
+}
+
+ 
+@media(max-width: 375px){
+    .top-bg{
+        height: 375px;
+        width: 375px;
+        top:-160px;
+        left:-167px;
+    }
+    .bottom-bg{
+        height: 375px;
+        width: 375px;
+        bottom: -79px;
+        right: -167px;
+    }
+}
+
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <section class="container">
+      <div id="bg-pattern-top"></div>
+      <div id="bg-pattern-bottom"></div>
+      <div class="form">
+        <div class="bg-pattern-card"></div>
+        <div class="info">
+          <div class="nav">
+            <div class="avatar">
+              <img src="image-victor.jpg" alt="Face" />
+            </div>
+            <p class="name">Victor Crest<span> 26</span></p>
+            <p class="loc">London</p>
+          </div>
+          <div class="details">
+            <div class="followers">
+              <p class="num">80K</p>
+              <p>Followers</p>
+            </div>
+            <div class="likes">
+              <p class="num">803K</p>
+              <p>Likes</p>
+            </div>
+            <div class="photos">
+              <p class="num">1.4K</p>
+              <p>Photos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
