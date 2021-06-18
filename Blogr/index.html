@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="hero">
+            <div class="nav">
+                <img class="brand" src="./images/logo.svg" alt="brand logo">
+
+                <!-- MENU HERE -->
+                <nav class="menu menu-hide">
+                    <div class="btn-close">
+                        <img src="./images/icon-close.svg" alt="icon-close">
+                    </div>
+
+                    <div class="menu-wrapper">
+                        <div class="menu-items-wrapper">
+                        <div class="menu-items">
+                            <div class="menu-heading">
+                                <h4>Product</h4>
+                                <img class="arrow" src="./images/icon-arrow-dark.svg" alt="icon-close">
+                            </div>
+                            <div class="sub-menu">
+                                <a href="#">Overview</a>
+                                <a href="#">Pricing</a>
+                                <a href="#">Marketplace</a>
+                                <a href="#">Features</a>
+                                <a href="#">Integrations</a>
+                            </div>
+                        </div>
+
+                        <div class="menu-items">
+                            <div class="menu-heading">
+                                <h4>Company</h4>
+                                <img class="arrow" src="./images/icon-arrow-dark.svg" alt="icon-close">
+                            </div>
+                            <div class="sub-menu">
+                                <a href="#">About</a>
+                                <a href="#">Team</a>
+                                <a href="#">Blog</a>
+                                <a href="#">Careers</a>
+                            </div>
+                        </div>
+
+                        <div class="menu-items">
+                            <div class="menu-heading">
+                                <h4>Connect</h4>
+                                <img class="arrow" src="./images/icon-arrow-dark.svg" alt="icon-close">
+                            </div>
+                            <div class="sub-menu">
+                                <a href="#">Contact</a>
+                                <a href="#">Newsletter</a>
+                                <a href="#">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                        <hr>
+
+                        <div class="btn-menu-wrapper">
+                            <a class="btn btn-login" href="#">
+                                <div>Login</div>
+                            </a>
+                            <a class="btn btn-singup" href="#">
+                                <div>Sing Up</div>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+                <!-- MENU END -->
+
+                <img class="hamburger" src="./images/icon-hamburger.svg" alt="icon hamburger">
+            </div>
+
+            <div class="hero-text-wrapper">
+                <h1><span>A modern</span> publishing platform</h1>
+                <h2>Grow your audience and build your online brand</h2>
+                <div class="btn-wrapper">
+                    <a class="btn btn-primary" href="#">
+                        <div>Start for Free</div>
+                    </a>
+                    <a class="btn btn-secondary" href="#">
+                        <div>Learn More</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+   <script>
+        const btnClose = document.querySelector('.btn-close');
+        const menu = document.querySelector('.menu');
+        const btnHamburger = document.querySelector('.hamburger');
+
+        btnClose.addEventListener('click', menuHideShow);
+        btnHamburger.addEventListener('click', menuHideShow);
+
+        function menuHideShow(){
+            menu.classList.toggle('menu-hide');
+            btnHamburger.classList.toggle('hamburger-hide');
+        }
+    </script>        
+</body>
+</html>
